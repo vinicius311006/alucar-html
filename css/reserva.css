@@ -1,0 +1,39 @@
+.background img {   
+    width: 100%;
+    height: 700px;
+
+}
+
+.caixa {
+    width: 80%;
+    height: 100%;
+    background-color: #b6b6b6;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cartao-carro {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fundo {
+    width: 450px;
+    height: 350px;
+    background-color: #d9d9d9;
+}
+
+.rodape {
+    width: 450px;
+    height: 65px;
+    background-color: #222222;
+}
