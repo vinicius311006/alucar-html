@@ -113,6 +113,7 @@ footer img {
 footer p {
     margin-left: 30px;
     margin-right: 50px;
+    color: white;
 }
 
 .caixa {
@@ -206,12 +207,14 @@ footer p {
     width: 100px;
     height: 50px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .texto {
     display: flex;
     justify-content: center;
-    margin-top: 15%; /*em ajuste normal é 5%*/
+    margin-top: 15%;
+    /*em ajuste normal é 5%*/
 }
 
 .carrossel {
@@ -267,4 +270,29 @@ footer p {
     margin-right: auto;
     width: 600px;
     height: auto;
+}
+
+.locais p {
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.locais-img img {
+    width: 380px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.locais-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.locais-img p {
+    text-align: center;
 }
