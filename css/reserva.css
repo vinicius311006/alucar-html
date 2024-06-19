@@ -1,16 +1,17 @@
-.background img {   
+.background img {
     width: 100%;
     height: 700px;
 
 }
 
-.caixa {
+.caixa-reserva {
     width: 80%;
     height: 100%;
     background-color: #b6b6b6;
     margin-left: auto;
     margin-right: auto;
-
+    border-radius: 20px;
+    box-shadow: 8px 2px 2px grey;
 }
 
 .wrap {
@@ -30,10 +31,52 @@
     width: 450px;
     height: 350px;
     background-color: #d9d9d9;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 8px 2px 2px gray;
 }
 
 .rodape {
     width: 450px;
     height: 65px;
     background-color: #222222;
+    display: flex;
+    align-items: center;
+    color: white;
+    box-shadow: 8px 2px 2px gray;
+}
+
+.rodape h1 {
+    margin-left: 1%;
+    font-size: 20px;
+}
+
+.valor {
+    width: 200px;
+    height: 50px;
+    margin-right: 1%;
+    margin-left: auto;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.valor button {
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cartao-carro img {
+    width: 100%;
+    height: auto;
+}
+
+.novidade-texto {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5%;
 }

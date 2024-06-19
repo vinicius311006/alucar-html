@@ -74,6 +74,7 @@ header {
 
 .menu ul a li {
     color: white;
+    font-size: 20px;
 }
 
 .menu-direita {
@@ -92,6 +93,7 @@ header {
 
 .menu-direita ul a li {
     color: white;
+    font-size: 20px;
 }
 
 footer {
