@@ -306,6 +306,10 @@ footer p {
     height: auto;
 }
 
+input {
+    outline: none;
+}
+
 @media screen and (max-width: 850px) {
     .carro1 {
         width: 50%;
