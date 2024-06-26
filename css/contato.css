@@ -1,0 +1,116 @@
+.conteiner-contato {
+    display: flex;
+}
+
+.conteudo {
+    background-color: #b9b9b9;
+    margin-left: 5%;
+    margin-top: 2%;
+    border-radius: 10px;
+    width: 60vw;
+    height: auto;
+    box-shadow: 8px 8px 8px 8px gray;
+}
+
+.titulo-principal h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 3%;
+    margin-left: 5%;
+    
+}
+
+.conteiner-titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-form h2 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 3%;
+}
+
+.controle-form {
+    margin-bottom: 2%;
+    margin-left: 3%;
+}
+
+.controle-form input {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: #b9b9b9;
+    width: 90%;
+    padding: 10px;
+    margin-top: 1%;
+}
+
+.controle-form textarea {
+    font-size: 16px;
+    width: 98%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    resize: none;
+    background-color: #b9b9b9;
+}
+
+.assistencia-img img {
+    width: 20vw;
+    height: auto;
+}
+
+.esquerda {
+    margin-top: 8%;
+    margin-left: 2%;
+}
+
+.titulo h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.titulo p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.titulo-esquerda h1 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tel-img img {
+    width: 40px;
+    height: auto;
+}
+
+.titulo-esquerda {
+    display: flex;
+    align-items: center;
+}
+
+.botao button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.botao {
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+
+
+
+
