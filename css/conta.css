@@ -1,0 +1,128 @@
+.conteudo {
+    margin-top: 3%;
+    width: 50%;
+    background-color: #B6B6B6;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(161, 161, 159);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(138, 134, 134);
+    margin-bottom: 5%;
+}
+
+.titulo {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.controle-form {
+    width: 50vw;
+    text-align: left;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.controle-form label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+.controle-forms {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    margin-top: 30px;
+}
+
+.cpf,
+.senha {
+    padding-right: 70%;
+}
+
+.controle-form input,
+.controle-forms input {
+    padding: 10px;
+    font-size: 13px;
+    color: black;
+    background-color: #B6B6B6;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+.controle-form input::placeholder {
+    color: #7D7878;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form h2 {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* responsivos */
+@media screen and (max-width: 750px) {
+    .conteudo {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .titulo {
+        font-size: 16px;
+    }
+
+    .logo-conta img {
+        width: 110px;
+        height: auto
+    }
+
+    .controle-form,
+    .controle-forms {
+        width: 70vw;
+        margin-top: 1%;
+    }
+
+    .controle-forms {
+        flex-direction: column;
+    }
+
+    .cpf {
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .senha {
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .botao button {
+        width: 60%;
+    }
+
+    form h2 {
+        font-size: 12px;
+    }
+
+}
