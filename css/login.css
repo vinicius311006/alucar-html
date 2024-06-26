@@ -44,11 +44,6 @@
 
 }
 
-.cor {
-    color: blue;
-
-}
-
 .controle-form {
     text-align: left;
     margin-top: 4%;
@@ -93,7 +88,6 @@
 form h2 {
     font-size: 20px;
     text-align: center;
-    margin-top: 5%;
     cursor: pointer;
 }
 
@@ -101,5 +95,11 @@ form h2 {
     display: flex;
     width: 100%;
     height: auto;
+    margin-top: 5%;
+}
+
+.criar-conta {
+    display: flex;
+    align-items: center;
     margin-top: 5%;
 }
