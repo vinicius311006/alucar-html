@@ -97,6 +97,10 @@ header {
     font-size: 20px;
 }
 
+.grupo {
+    display: none;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -359,10 +363,62 @@ input {
         width: 50%;
         height: auto;
     }
-    
+
     .carro2 {
         width: 50%;
         height: auto;
     }
+
+    .menu,
+    .menu-direita ul {
+        display: none;
+    }
+
+    .grupo {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5vw;
+    }
+
+    .grupo img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+
+    }
+
+    .menu ul {
+        display: block;
+        width: 20vw;
+        justify-content: center;
+    }
+
+    .menu ul li {
+        text-align: center;
+        font-size: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .carrossel {
+        position: relative;
+        z-index: -1;
+    }
+
+    #menu.visible {
+        display: block;
+        width: 20vw;
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        text-align: center;
+        top: 12vh;
+        right: 1vw;
+        z-index: 0;
+        border-radius: 5px;
+        background-color: #222222;
+    }
+
 
 }
