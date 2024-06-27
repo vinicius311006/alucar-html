@@ -13,7 +13,7 @@
     margin-right: auto;
 }
 
-.texto {
+.textoLogin {
     background-color: #C9C9C9;
     width: 400px;
     height: 27vh;
@@ -24,19 +24,19 @@
     margin-top: 7%
 }
 
-.texto h2 {
+.textoLogin h2 {
     text-align: center;
     font-size: 60px;
     margin-top: 5%;
 }
 
-.texto h1 {
+.textoLogin h1 {
     font-size: 20px;
     margin-top: 1%;
     text-align: center;
 }
 
-.texto p {
+.textoLogin p {
     font-size: 20px;
     margin-top: 3%;
     margin-right: 10%;
