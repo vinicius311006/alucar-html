@@ -11,6 +11,18 @@
     margin-bottom: 5%;
 }
 
+.caixa-conta {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10%;
+}
+
 .titulo {
     color: black;
     font-size: 18px;

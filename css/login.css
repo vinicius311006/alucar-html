@@ -95,7 +95,11 @@ form h2 {
     display: flex;
     width: 100%;
     height: auto;
-    margin-top: 5%;
+    margin-top: 15%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .criar-conta {
