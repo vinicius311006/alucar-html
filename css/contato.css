@@ -7,7 +7,7 @@
     margin-left: 5%;
     margin-top: 2%;
     border-radius: 10px;
-    width: 60vw;
+    width: 50vw;
     height: auto;
     box-shadow: 8px 8px 8px 8px gray;
 }
@@ -17,7 +17,7 @@
     font-weight: 700;
     margin-top: 3%;
     margin-left: 5%;
-    
+
 }
 
 .conteiner-titulo {
@@ -81,7 +81,12 @@
 }
 
 .titulo-esquerda h1 {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.titulo-esquerda p {
+    font-size: 12px;
     font-weight: 500;
 }
 
@@ -96,7 +101,7 @@
 }
 
 .botao button {
-    width: 20%;
+    width: 40%;
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -111,8 +116,3 @@
     margin-left: 10%;
     margin-top: 5%;
 }
-
-
-
-
-

@@ -90,6 +90,7 @@
         width: 100%;
         height: 600px;
     }
+
     .caixa-reserva {
         margin-top: -80px;
     }
@@ -100,9 +101,9 @@
         width: 100%;
         height: 400px;
     }
-    
+
     .caixa-reserva {
         margin-top: -40px;
     }
-    
+
 }
