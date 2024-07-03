@@ -17,7 +17,8 @@
                 <h2>Alucar</h2>
             </div>
             <div class="d-flex justify-content-end mb-3">
-                <button type="button" class="btn btn-secondary" data-bs-target="#delModal" data-bs-toggle="modal">Novo Veiculo </button>
+                <button type="button" class="btn btn-secondary" data-bs-target="#delModal" data-bs-toggle="modal">Novo
+                    Veiculo </button>
             </div>
             <table class="table table-hover">
                 <thead>
@@ -80,95 +81,70 @@
                     <!-- atualizar AUALIZAR -->
 
                     <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Atualizar Carro</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form id="form" class="row g-1">
-                                    <label for="add-num">numero chassi</label>
-                                    <input id="add-num" type="text">
-                                    <label for="add-ano">ano</label>
-                                    <input id="add-ano" type="text">
-                                    <label for="add-marca">marca</label>
-                                    <input id="add-marca" type="text">
-                                    <label for="add-cor">cor</label>
-                                    <input id="add-cor" type="text">
-                                    <label for="add-modelo">modelo</label>
-                                    <input id="add-modelo" type="text">
-                                    <label for="add-placa">placa</label>
-                                    <input id="add-placa" type="text">
-                                    <label for="add-descricao">descrição</label>
-                                    <input id="add-descricao" type="text">
-                                    <label for="add-imagem">imagem</label>
-                                    <input id="add-imagem" type="text">
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Atualizar Carro</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="form" class="row g-1">
+                                        <label for="add-num">numero chassi</label>
+                                        <input id="add-num" type="text">
+                                        <label for="add-ano">ano</label>
+                                        <input id="add-ano" type="text">
+                                        <label for="add-marca">marca</label>
+                                        <input id="add-marca" type="text">
+                                        <label for="add-cor">cor</label>
+                                        <input id="add-cor" type="text">
+                                        <label for="add-modelo">modelo</label>
+                                        <input id="add-modelo" type="text">
+                                        <label for="add-placa">placa</label>
+                                        <input id="add-placa" type="text">
+                                        <label for="add-descricao">descrição</label>
+                                        <input id="add-descricao" type="text">
+                                        <label for="add-imagem">imagem</label>
+                                        <input id="add-imagem" type="text">
 
-                                </form>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="submit" class="btn btn-warning">Atualizar</button>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Cancelar</button>
-                                <button type="submit" class="btn btn-warning">Atualizar</button>
+                        </div>
+                    </div>
+                    <!-- deletar DELETAR  -->
+
+                    <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">excluir carro</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>deseja deletar este carro?</p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="submit" class="btn btn-danger">Deletar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- deletar DELETAR  -->
-
-                <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">excluir carro</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>deseja deletar este carro?</p>
-                          
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"
-                                data-bs-dismiss="modal">Cancelar</button>
-                            <button type="submit" class="btn btn-danger">Deletar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-                </div>
-
-
             </section>
-
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
