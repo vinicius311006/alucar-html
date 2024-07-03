@@ -116,3 +116,27 @@
     margin-left: 10%;
     margin-top: 5%;
 }
+
+@media screen and (max-width: 570px) {
+    .titulo-principal h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .conteiner-contato {
+        flex-direction: column-reverse;
+    }
+
+    .conteiner-titulo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .esquerda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}

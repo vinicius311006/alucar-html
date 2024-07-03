@@ -1,0 +1,267 @@
+.texto {
+    margin-top: 7vw;
+    margin-left: 5vw;
+
+
+
+}
+
+.tabelas {
+    display: flex;
+    margin-left: -12vw;
+
+
+}
+
+.tabela1 {
+    height: 50vh;
+    width: 60vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    margin-left: 1vw;
+    border-radius: 30px;
+    margin-right: 5vw;
+    background-color: #B6B6B6;
+    box-shadow: 15px 15px 10px #757575;
+
+}
+
+.tabela1 p {
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 1vw;
+    text-align: start;
+    border-bottom: 2px solid white;
+    color: white;
+    margin-bottom: 5vw;
+
+}
+
+.tabela1 img {
+    height: 17vw;
+    width: auto;
+
+
+}
+
+.cartao-carro {
+    margin-top: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fundo {
+    width: 18vw;
+    height: 200px;
+    background-color: #d9d9d9;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 8px 2px 2px gray;
+    margin-left: 5vw;
+
+}
+
+.fundo img {
+
+    margin-left: -3vw;
+    margin-top: -3vw;
+}
+
+.rodape {
+    width: 18vw;
+    height: 30px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    color: white;
+    box-shadow: 8px 2px 2px gray;
+    margin-left: 5vw;
+    border-radius: 5px;
+
+}
+
+.rodape h1 {
+    margin-left: 1%;
+    font-size: 1vw;
+
+}
+
+.valor {
+    width: 200px;
+    height: 50px;
+    margin-left: 8vw;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.tabela1 h4 {
+    margin-left: 24vw;
+    margin-top: -12vw;
+    font-size: 1.5vw;
+    color: white;
+
+}
+
+
+
+
+.tabela2 {
+    height: 50vh;
+    width: 20vw;
+    margin-top: 10vw;
+    border-radius: 30px;
+    background-color: #B6B6B6;
+    box-shadow: 15px 15px 10px #757575;
+}
+
+.tabela2 p {
+    margin-top: 1vw;
+    border-bottom: 2px solid white;
+    text-align: center;
+    font-size: 1vw;
+    color: white;
+}
+
+.tabela2 h4 {
+    margin-top: 1vw;
+    color: white;
+    margin-left: 1vw;
+
+}
+
+.tabela2 button {
+    margin-top: 18vw;
+    height: 6vh;
+    width: 15vw;
+    margin-left: 2.5vw;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+
+}
+
+@media screen and (max-width:1121px) {
+    .cartao-carro {
+        margin-top: 5vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fundo {
+        width: 20vw;
+        height: 120px;
+        background-color: #d9d9d9;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 8px 2px 2px gray;
+        margin-left: 5vw;
+
+    }
+
+    .fundo img {
+
+        margin-left: -2vw;
+        margin-top: -2vw;
+    }
+
+    .rodape {
+        width: 20vw;
+        height: 30px;
+        background-color: #222222;
+        display: flex;
+        align-items: center;
+        color: white;
+        box-shadow: 8px 2px 2px gray;
+        margin-left: 5vw;
+        border-radius: 5px;
+
+    }
+
+    .tabela1 h4 {
+        margin-left: 26vw;
+        margin-top: -12vw;
+        font-size: 1.5vw;
+        color: white;
+
+    }
+
+    .tabela1 {
+        height: 30vh;
+        width: 50vw;
+        margin-left: -6vw;
+
+    }
+
+    .tabela2 {
+        height: 30vh;
+        width: 20vw;
+    }
+
+    .tabela2 button {
+        margin-top: 10vw;
+    }
+
+}
+
+@media screen and (max-width:1067px) {
+    .cartao-carro {
+        margin-top: 5vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fundo {
+        width: 15vw;
+        height: 100px;
+        background-color: #d9d9d9;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 8px 2px 2px gray;
+        margin-left: 5vw;
+
+    }
+
+    .fundo img {
+
+        margin-left: -2vw;
+        margin-top: -2vw;
+    }
+
+    .rodape {
+        width: 20vw;
+        height: 30px;
+        background-color: #222222;
+        display: flex;
+        align-items: center;
+        color: white;
+        box-shadow: 8px 2px 2px gray;
+        margin-left: 5vw;
+        border-radius: 5px;
+
+    }
+
+    .tabela1 h4 {
+        margin-left: 26vw;
+        margin-top: -12vw;
+        font-size: 1.5vw;
+        color: white;
+
+    }
+
+    .tabela1 {
+        height: 30vh;
+        width: 50vw;
+        margin-left: -6vw;
+
+    }
+
+    .tabela2 {
+        height: 30vh;
+        width: 20vw;
+    }
+
+    .tabela2 button {
+        margin-top: 10vw;
+    }
+
+
+}
