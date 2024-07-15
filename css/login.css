@@ -1,83 +1,87 @@
-.conteudo {
-    margin-top: 3%;
-    width: 30%;
-    background-color: #B6B6B6;
-    margin-left: -50px;
-    border: 1px solid rgb(161, 161, 159);
-    padding: 3%;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgb(136, 71, 71);
-    margin-bottom: 5%;
-    z-index: 1;
-    position: relative;
-    margin-right: auto;
+.conteiner-login {
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    margin-top: 25vh;
 }
 
-.textoLogin {
-    background-color: #C9C9C9;
-    width: 400px;
-    height: 27vh;
-    z-index: -1;
-    position: relative;
+.caixa-texto {
+    width: 20vw;
+    height: 35vh;
+    background-color: #c9c9c9;
     border-radius: 20px;
-    margin-left: auto;
-    margin-top: 7%
 }
 
-.textoLogin h2 {
+.caixa-texto h1 {
     text-align: center;
     font-size: 60px;
-    margin-top: 5%;
+    font-weight: 600;
+    margin-bottom: 5%;
+    margin-top: 20%;
 }
 
-.textoLogin h1 {
-    font-size: 20px;
-    margin-top: 1%;
+.caixa-texto p {
     text-align: center;
-}
-
-.textoLogin p {
     font-size: 20px;
-    margin-top: 3%;
-    margin-right: 10%;
-    text-align: center;
-
+    margin-bottom: 5%;
+    font-weight: 400;
+    margin-right: 5%;
 }
 
-.controle-form {
-    text-align: left;
-    margin-top: 4%;
-    padding: 10px;
+.caixa-login {
+    width: 30vw;
+    height: 50vh;
+    background-color: #b6b6b6;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(80, 80, 80);
+    position: relative;
+    z-index: 1;
+    margin-left: -15px;
 }
 
-.controle-form label {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: black;
-    margin-left: 13%;
+.caixa-login label {
+    font-size: 25px;
+    font-weight: 400;
 }
 
-.controle-form input {
-    padding: 10px;
-    font-size: 20px;
-    color: black;
-    background-color: #B6B6B6;
-    border: none;
+.caixa-login form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-login input {
+    width: 100%;
+    border: 0px;
+    background-color: #b6b6b6;
     border-bottom: 1px solid rgb(255, 255, 255);
-    width: 40%;
-    outline: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.email {
+    margin-bottom: 10%;
+}
+
+.senha {
+    margin-bottom: 5%;
 }
 
 .botao {
     text-align: center;
-    margin-top: 6%;
 }
 
 .botao button {
     background-color: black;
     color: white;
-    font-weight: bold;
-    width: 30%;
     padding: 20px;
     border: none;
     border-radius: 20px;
@@ -85,25 +89,18 @@
     font-size: 20px;
 }
 
-form h2 {
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.conteinerLogin {
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin-top: 15%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
-
 .criar-conta {
     display: flex;
     align-items: center;
     margin-top: 5%;
 }
+
+.criar-conta h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.link {
+    margin-left: 10px;
+}
+

@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="shortcut icon" href="./src/img/ALU.png" type="image/x-icon">
-    <title>Alucar</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loginteste.css">
+    <link rel="stylesheet" type="text/css" href="./src/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./src/slick-1.8.1/slick/slick-theme.css" />
+    <title>Alucar-locadora de veiculos</title>
 </head>
 
 <body>
@@ -51,37 +52,25 @@
                     </div>
                 </div>
             </header>
-            <!-- Início do conteúdo -->
 
             <div id="particles-js"></div>
-            <div class="conteinerLogin">
-                <div class="textoLogin">
-                    <h2>LOGIN</h2>
-                    <h1>Sou Cliente</h1>
-                    <p>
-                        Olá! Se você já Alugou na<br>
-                        loja da Alucar antes, por favor,<br>
-                        informe seu e-mail e senha.
-                    </p>
+            <div class="conteiner-login">
+                <div class="caixa-texto">
+                    <h1>LOGIN</h1>
+                    <p>Olá! Se você já Alugou na <br>
+                        loja da Alucar antes, por favor, <br>
+                        informe seu e-mail e senha.</p>
                 </div>
-
-                <div class="conteudo">
-
-
-
-                    <form action="form" id="form">
-                        <div class="controle-form">
-                            <div>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" placeholder="Informe o seu email">
-                            </div>
+                <div class="caixa-login">
+                    <form>
+                        <div class="email">
+                            <label for="">Email:</label>
+                            <input type="text" placeholder="Informe o seu Email">
                         </div>
 
-                        <div class="controle-form">
-                            <div class="senha">
-                                <label for="senha">Senha:</label>
-                                <input type="password" id="senha" placeholder="Informe sua senha">
-                            </div>
+                        <div class="senha">
+                            <label for="">Senha:</label>
+                            <input type="text" placeholder="Informe sua Senha">
                         </div>
 
                         <div class="botao">
@@ -91,14 +80,14 @@
                         </div>
                         <div class="criar-conta">
                             <h2>AINDA NÃO TEM CONTA?</h2>
-                            <a href="./criarConta.html">CRIAR CONTA</a>
+                            <div class="link">
+                                <a href="./criarConta.html">CRIAR CONTA</a>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <!-- Fim do conteúdo -->
         </div>
-
         <footer>
             <p>Desenvolvido por #TI2023</p>
             <div class="rede">
@@ -110,6 +99,7 @@
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./src/slick-1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="./js/menu.js"></script>
     <script src="./node_modules/particles.js/particles.js"></script>
     <script src="./node_modules/particles.js/demo/js/app.js"></script>
