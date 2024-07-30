@@ -17,8 +17,6 @@ body {
     background-color: #d9d9d9;
 }
 
-
-/*divs página / corpo e principal são utilizadas para fixar o rodapé ao final da página*/
 #pagina {
     min-height: 100%;
     max-width: 100vw;
@@ -35,7 +33,6 @@ body {
 
 .corpo {
     padding-bottom: 100px;
-    /*esse valor deve ser exatamente a altura do seu rodapé*/
 }
 
 header {
@@ -99,6 +96,16 @@ header {
 .menu-direita ul a li {
     color: white;
     font-size: 20px;
+}
+
+.menu ul a li:hover{
+    border-bottom: rgb(182, 0, 0) 1px solid;
+    color: rgb(182, 0, 0);
+}
+
+.menu-direita ul a li:hover{
+    border-bottom: rgb(182, 0, 0) 1px solid;
+    color: rgb(182, 0, 0);
 }
 
 .grupo {
@@ -230,7 +237,6 @@ footer p {
     display: flex;
     justify-content: center;
     margin-top: 20%;
-    /*em ajuste normal é 5%*/
 }
 
 .carrossel {
@@ -303,6 +309,7 @@ footer p {
 
 .carros {
     display: flex;
+    margin-top: -20px;
 }
 
 .carro1 {
@@ -422,7 +429,7 @@ input {
         text-align: center;
         top: 12vh;
         right: 1vw;
-        z-index: 0;
+        z-index: 1;
         border-radius: 5px;
         background-color: #222222;
     }

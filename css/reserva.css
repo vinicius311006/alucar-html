@@ -1,114 +1,3 @@
-/* .background img {
-    width: 100%;
-    height: 900px;
-    z-index: 0;
-    position: relative;
-}
-
-.caixa-reserva {
-    width: 80%;
-    height: 100%;
-    background-color: #b6b6b6;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    box-shadow: 8px 2px 2px grey;
-    position: relative;
-    z-index: 1;
-    margin-top: -150px;
-}
-
-.wrap {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.cartao-carro {
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.fundo {
-    width: 450px;
-    height: 350px;
-    background-color: #d9d9d9;
-    border-radius: 20px 20px 0 0;
-    box-shadow: 8px 2px 2px gray;
-}
-
-.rodape {
-    width: 450px;
-    height: 65px;
-    background-color: #222222;
-    display: flex;
-    align-items: center;
-    color: white;
-    box-shadow: 8px 2px 2px gray;
-}
-
-.rodape h1 {
-    margin-left: 1%;
-    font-size: 20px;
-}
-
-.valor {
-    width: 200px;
-    height: 50px;
-    margin-right: 1%;
-    margin-left: auto;
-    background-color: #d9d9d9;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.valor button {
-    width: 100%;
-    height: 50px;
-    border: 0px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.cartao-carro img {
-    width: 100%;
-    height: auto;
-}
-
-.novidade-texto {
-    font-size: 25px;
-    font-weight: bold;
-    padding: 3%;
-}
-
-@media screen and (max-width: 1450px) {
-    .background img {
-        width: 100%;
-        height: 600px;
-    }
-
-    .caixa-reserva {
-        margin-top: -80px;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .background img {
-        width: 100%;
-        height: 400px;
-    }
-
-    .caixa-reserva {
-        margin-top: -40px;
-    }
-
-}
- */
-
 .background img {
     width: 100%;
     height: auto;
@@ -119,11 +8,17 @@
 .caixa-reserva {
     width: 80%;
     background-color: #b6b6b6;
-    margin: -150px auto 50px;
+    margin: -50px auto 50px;
     border-radius: 20px;
     box-shadow: 8px 2px 2px grey;
     position: relative;
     z-index: 1;
+}
+
+.novidade-texto h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 50px;
 }
 
 .cartao-carro {
@@ -134,7 +29,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .cartao-carro .fundo {
@@ -180,7 +74,7 @@
 }
 
 .cartao-carro .valor button {
-    width: 20%;
+    width: 60%;
     color: black;
     border: none;
     padding: 10px 0;

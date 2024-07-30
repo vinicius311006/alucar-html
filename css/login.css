@@ -103,3 +103,15 @@
     margin-left: 10px;
 }
 
+@media screen and (max-width: 810px) {
+
+    .caixa-texto {
+        display: none;
+    }
+
+    .caixa-login {
+        margin: 0;
+        width: 80vw;
+        height: 50vh;
+    }
+}
