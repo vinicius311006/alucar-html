@@ -1,397 +1,67 @@
-/* #pagina{
-   
-} */
-.titulo{
-    text-align: center;
-    margin-bottom: 5vw;
-    margin-top: 1vw;
- 
+.conteiner-conta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
- 
-.conteiner {
-    display: flex;
+
+.texto-principal {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 30px;
+  font-weight: 700;
+
 }
- 
- 
-.op{
-    border: 0px solid black;
-    border-radius: 20px;
-    width: 13vw;
-    height: 30vh;
-    display: flex;
-    margin-left: 90px;
-    margin-bottom: 30px;
-    background-color: #B6B6B6;
-    padding: 20px;
-    box-shadow: 15px 15px 10px #757575;
- 
-   
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #b6b6b6;
+  min-width: 50vw;
+  height: 100vh;
+  border-radius: 20px;
+  box-shadow: rgb(100, 100, 100) 8px 8px;
 }
-.op img{
-    width: 2vw;
-    height: 3.5vh;
-    margin-top: 10px;
-   
+
+.form h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 5%;
 }
-.op li{
-    font-weight: 500;
-   display: flex;
-   margin-bottom: 10px;
-   margin-left: auto;
-   margin-right: auto;
-   font-size: 0.7vw;
- 
+
+.form h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 5%;
+  margin-bottom: 2%;
 }
-.op p{
-    margin-top: 1vw;
-    margin-left: 1vw;
-    color: black;
-    font-weight: 600;
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 3%;
+  font-size: 22px;
 }
- 
-.tabela{
-    width: 50%;
-    height: 60vw;
-    margin-left: auto;
-    margin-right: auto;
- 
-    border: 0px solid black;
-    border-radius: 20px;
-    margin-bottom: 100px;
-    box-shadow: 15px 15px 10px #757575;
-    background-color: #B6B6B6;
-   
- 
+
+input {
+  min-width: 20vw;
+  padding: 10px;
+  background-color: rgb(212, 212, 212);
+  border: none;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  margin-top: 2%;
+  border-radius: 10px;
 }
-.inicio{
-    margin-left: 1vw;
-    padding: 2vw;
-    text-align: left;
-}
-.inicio h1{
-    margin-bottom: 0.3vw;
-    font-size: 45px;
-}
-.inicio h2{
-    margin-bottom: 15px;
-    margin-left: 0.3vw;
-}
-.inicio h3{
-    margin-left: 0.3vw;
-}
-.Inform
-{
-    margin-left: 10px;
-    height: 20vh;
-    display: flex;
-   
- 
-}
-.Inform button{
-    width: 3vw;
-    height: 5vh;
-    justify-content: center;
-    border: 0px solid black;
-    border-radius: 10px;
-    background-color: #0048fe7a;
-    margin-left: 0.7vw;
-    margin-right: 2.3vw;
-    margin-top: 1.5vw;
- 
-    cursor: pointer;
-}
- 
-.Inform img{
-    width: 3vw;
-    height: 5vh;
-}
-.Inform input{
-    padding-bottom: 5vw ;
-    height: 1vh;
-    width: 380px;
-    border-radius: 20px;
-   
-    box-shadow: 15px 15px 10px #757575;
-}
- 
-.meio{
-    padding: 10px;
-    margin-bottom: 15px;
-   
-   
-}
-.meio h2{
-    font-size: 25px;
-}
-.meio p{
-    margin-top: 2px;
-    font-size: 23px;
-    margin-left: 1vw;
-   
-}
-.Inform1
-{
-    margin-left: 1vw;
-    margin-right: auto;
-    height: 15vh;
-    display: flex;
- 
-}
-.Inform1 input{
- 
-    padding-bottom: 5vw;
-    height: 1vh;
-    width: 30vw;
-    border-radius: 20px;
-    margin-right: 130px;
-    box-shadow: 15px 15px 10px #757575;
-}
-h2{
-    margin-bottom: 2vh;
-    margin-left: 15px;
-    margin-left: 1vw;
-}
- 
-.Inform3
-{
-    margin-top: 2vh;
-    margin-left: 1vw;
-    margin-right: auto;
-    height: 150px;
-    display: flex;
-   
- 
-}
-.Inform3 button{
-    width: 3vw;
-    height: 5vh;
-    justify-content: center;
-    border: 0px solid black;
-    border-radius: 10px;
-    background-color: #0048fe7a;
-    margin-top: 2vw;
-    margin-left: 0.5vw;
-    margin-right: auto;
-    cursor: pointer;
-}
-.Inform3 img{
-    width: 3vw;
-    height: 5vh;
-}
-.Inform3 input{
-    padding-bottom: 5vw;
-    height: 1vh;
-    width: 15vw;
-    border-radius: 20px;
-    box-shadow: 15px 15px 10px #757575;
-    display: flex;
-   
-}
- 
- 
- 
-.Inform4 input{
-    padding-bottom: 5vw;
-    width: 30vw;
-    height: 1vh;
-    border-radius: 20px;
-    margin-right: 4vw;
-    margin-left: -2.5vw;
-    box-shadow: 15px 15px 10px #757575;
-   
-}
- 
-.Inform4 {
-    display: flex;
-    margin-left: 28vw;
-    margin-right: auto  ;
-    margin-top: -140px;
-    height: 4vh;
-    width: 20vw;
-    border-radius: 20px;
-}
- 
-@media screen and (max-width:1750px){
-    .op{
-        margin-left: 1.5vw;
-        height: 20vh;
-        width: 18vw;
-    }
-    .op img{
-        width:3vw;
-        height: 3vh;
-       
-    }
-    .op li{
-        font-size: 0.9vw;
-    }
- 
-    .Inform4 input{
-        margin-left: -1vw;
-       
-    }
-   
-   
-}
-@media screen and (max-width:1590px){
-    .op{
-        height: 20vw;
-        width: 18vw;
-    }
-    .op img{
-        width:3vw;
-        height: 3vw;
-       
-    }
-    .op li{
-        font-size: 0.9vw;
-    }
-    .tabela{
-        width: 52vw;
-        height: 65vw;
-    }
-    .meio h2{
-        font-size: 1vw;
-        margin-bottom: 0;
-       
-    }
-    .meio p{
-        font-size: 1vw;
-        margin-bottom: 0;
-        padding: 0;
-    }
-    .Inform4 input{
-        margin-right: 1vw;
-    }
-    h2{
-        margin-bottom: 1px;
-        margin-left: 1vw;
-    }
-   
-}
-@media screen and (max-width:1521px){
-    .inicio{
-        padding: 1vw;
-    }
-    .Inform1 input{
-        margin-bottom: 7px;
-    }
-    .Inform4 input{
-        width: 10vw;
-        margin-left: 2px;
-        margin-left: 1px;
- 
-    }
- 
- 
- 
-}
-@media screen and (max-width:1293px){
-    .op{
-        width: 14vw;
-        height: 20vh;
-    }
-    .op img{
-        width: 2.5vw;
-        height: 2.5vh;
-    }
-    .Inform input{
-        padding-bottom: 5vw;
-    }
- 
- 
-}
-@media screen and (max-width:1275px) {
-    .op{
-        height: 16vw;
- 
-    }
-   
-    .op img{
-        width: 1.5vw;
-        height: 1.5vw;
-    }
-    .inicio h1{
-        font-size: 2vw;
-    }
-    .inicio h2{
-        font-size: 1.5vw;
-    }
-    .Inform{
-        height: 15vh;
-    }
-    .Inform1{
-        height: 10vh;
-    }
- 
-   
-}
-@media screen and (max-width:1000px) {
-    .Inform input{
-        width: 15vw;
-    }
-    .inform button{
-        width: 90vw;
-        height: 7vw;
- 
-    }
-    .inform img{
-        width: 90vw;
-        height: 7vw;
-    }
-    .Inform1 input{
-        width: 15vw;
-    }
-    .Inform2 input{
-        width: 15vw;
-    }
-    .Inform3 input{
-        width: 15vw;
-    }
-    .Inform4 input{
-        width: 9vw;
-    }
-   
-}
-@media screen and (max-width:930px) {
-    .Inform input{
-        width: 12vw;
-    }
-    .inform button{
-        width: 3vw;
-        height: 3vw;
-    }
-    .Inform img{
-        width: 3vw;
-        height: 3vw;
-    }
-    .Inform1 input{
-        width: 12vw;
-    }
-    .Inform2 input{
-        width: 12vw;
-    }
-    .Inform3 input{
-        width: 12vw;
-    }
-    .Inform4 input{
-        width: 7vw;
-    }
-    .tabela{
-        width: 50vw;
-        height: 80vw;
-    }
-    .meio{
-        h2{
-            font-size: 1vw;
-            margin-top: -55px;
-        }
-    }
-    .Inform1{
-        margin-top: -30px;
-    }
-    h2{
-        margin-top: -20px;
-        margin-bottom: 30px;
-    }
+
+button{
+  min-width: 5vw;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(212, 212, 212);
+  margin-left: 2%;
 }
