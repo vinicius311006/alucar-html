@@ -1,0 +1,78 @@
+.caixa-mons {
+  background-color: #b9b9b9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+  box-shadow: 9px 9px rgb(150, 150, 150);
+  border-radius: 15px;
+}
+
+.nome-car h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.img-car {
+  min-width: 30vw;
+  height: auto;
+}
+
+.img-car img {
+  width: 100%;
+  height: auto;
+}
+
+.descricao-car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30vw;
+  margin-bottom: 100px;
+}
+
+.ano,
+.cambio,
+.cor,
+.combustivel {
+  border: 1px solid black;
+  min-width: 200px;
+  height: 8vh;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.linha {
+  display: flex;
+}
+
+.linha img {
+  width: 35px;
+  height: auto;
+}
+
+.voltar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voltar a {
+  text-decoration: none;
+  color: black;
+  width: 150px;
+  height: 50px;
+  background-color: #b9b9b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  box-shadow: 9px 9px rgb(150, 150, 150);
+}
