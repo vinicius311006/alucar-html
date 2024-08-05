@@ -19,14 +19,14 @@
                 <div class="container-fluid ">
                     <div class="collapse navbar-collapse" id="navbarNav ">
                         <ul class="navbar-nav ">
-                            <!-- <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./admin.html">Home</a>
-                            </li> -->
                             <li class="nav-item">
-                                <a class="nav-link" href="./veiculos.html">veiculos</a>
+                                <a class="nav-link" aria-current="page" href="./admin.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./clientes.html">clientes</a>
+                                <a class="nav-link active" href="./veiculos.html">veiculos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="./clientes.html">clientes</a>
                             </li>
                         </ul>
                     </div>
@@ -39,15 +39,15 @@
             <table id="cadastro" class="table table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">numero-chassi</th>
-                        <th scope="col">ano</th>
-                        <th scope="col">marca</th>
-                        <th scope="col">cor</th>
-                        <th scope="col">modelo</th>
-                        <th scope="col">placa</th>
-                        <th scope="col">diaria</th>
-                        <th scope="col">imagem</th>
-                        <th scope="col">descrição</th>
+                        <th scope="col">Num-chassi</th>
+                        <th scope="col">Ano</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Cor</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Placa</th>
+                        <th scope="col">Diaria</th>
+                        <th scope="col">Imagem</th>
+                        <th scope="col">Descrição</th>
                         <th scope="col">editar</th>
                         <th scope="col">excluir</th>
                     </tr>
@@ -63,35 +63,37 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionar Carro</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionar Veiculo</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form id="form" class="row g-1">
-                                        <label for="add-num">numero chassi</label>
-                                        <input id="add-num" type="text">
-                                        <label for="add-ano">ano</label>
-                                        <input id="add-ano" type="text">
-                                        <label for="add-marca">marca</label>
-                                        <input id="add-marca" type="text">
-                                        <label for="add-cor">cor</label>
-                                        <input id="add-cor" type="text">
-                                        <label for="add-modelo">modelo</label>
-                                        <input id="add-modelo" type="text">
-                                        <label for="add-placa">placa</label>
-                                        <input id="add-placa" type="text">
-                                        <label for="add-descricao">descrição</label>
-                                        <input id="add-descricao" type="text">
-                                        <label for="add-imagem">imagem</label>
-                                        <input id="add-imagem" type="text">
-
+                                    <form id="m-form" class="row g-1">
+                                        <label for="m-chassi">Numero Chassi</label>
+                                        <input id="m-chassi" type="text">
+                                        <label for="m-ano">Ano</label>
+                                        <input id="m-ano" type="number">
+                                        <label for="m-marca">Marca</label>
+                                        <input id="m-marca" type="text">
+                                        <label for="m-cor">Cor</label>
+                                        <input id="m-cor" type="text">
+                                        <label for="m-modelo">Modelo</label>
+                                        <input id="m-modelo" type="text">
+                                        <label for="m-placa">Placa</label>
+                                        <input id="m-placa" type="text">
+                                        <label for="m-diaria">Diaria</label>
+                                        <input id="m-diaria" type="number">
+                                        <label for="m-imagem">Imagem</label>
+                                        <input id="m-imagem" type="text">
+                                        <label for="m-descricao">Descrição</label>
+                                        <input id="m-descricao" type="text">
+                                        
                                     </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cancelar</button>
-                                    <button type="submit" class="btn btn-primary">Salvar</button>
+                                    <button id="btnSalvar" type="submit" class="btn btn-primary">Salvar</button>
                                 </div>
                             </div>
                         </div>
@@ -103,29 +105,30 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Atualizar Carro</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Atualizar Veiculo</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form id="form" class="row g-1">
-                                        <label for="add-num">numero chassi</label>
-                                        <input id="add-num" type="text">
-                                        <label for="add-ano">ano</label>
-                                        <input id="add-ano" type="text">
-                                        <label for="add-marca">marca</label>
-                                        <input id="add-marca" type="text">
-                                        <label for="add-cor">cor</label>
-                                        <input id="add-cor" type="text">
-                                        <label for="add-modelo">modelo</label>
-                                        <input id="add-modelo" type="text">
-                                        <label for="add-placa">placa</label>
-                                        <input id="add-placa" type="text">
-                                        <label for="add-descricao">descrição</label>
-                                        <input id="add-descricao" type="text">
-                                        <label for="add-imagem">imagem</label>
-                                        <input id="add-imagem" type="text">
-
+                                        <label for="u-chassi">Numero Chassi</label>
+                                        <input id="u-chassi" type="text">
+                                        <label for="u-ano">Ano</label>
+                                        <input id="u-ano" type="number">
+                                        <label for="u-marca">Marca</label>
+                                        <input id="u-marca" type="text">
+                                        <label for="u-cor">Cor</label>
+                                        <input id="u-cor" type="text">
+                                        <label for="u-modelo">Modelo</label>
+                                        <input id="u-modelo" type="text">
+                                        <label for="u-placa">Placa</label>
+                                        <input id="u-placa" type="text">
+                                        <label for="u-diaria">Diaria</label>
+                                        <input id="u-diaria" type="number">
+                                        <label for="u-descricao">Descrição</label>
+                                        <input id="u-descricao" type="text">
+                                        <label for="u-imagem">Imagem</label>
+                                        <input id="u-imagem" type="text">
                                     </form>
                                 </div>
                                 <div class="modal-footer">
@@ -143,12 +146,12 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">excluir carro</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">excluir Veiculo</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>deseja deletar este carro?</p>
+                                    <p>deseja deletar este Veiculo?</p>
 
                                 </div>
                                 <div class="modal-footer">
@@ -163,6 +166,9 @@
             </section>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./js/veiculo.js"></script>
