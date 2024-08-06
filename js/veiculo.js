@@ -76,7 +76,6 @@ $(document).ready(function () {
         }
     })
     $(document).on('click', '#btnEditar', function () {
-
         var line = $(this).closest('tr')
         var id = line.find('#code').text()
 
@@ -92,14 +91,14 @@ $(document).ready(function () {
                 $('#u-modelo').val(data.modelo)
                 $('#u-placa').val(data.placa)
                 $('#u-diaria').val(data.diaria)
-                $('#u-descricao').val(data.descricao)
                 $('#u-imagem').val(data.imagem)
+                $('#u-descricao').val(data.descricao)
 
                 $('#updateModal').modal('show') //mostra no modal
             },
             error: function (error) {
                 console.log(error);
-                console.log('Não foi possivel recuperar os dados.');
+                alert('Não foi possivel recuperar os dados.');
             }
         })
         $(document).on('click', '#btnAlterar', function () {
@@ -128,8 +127,8 @@ $(document).ready(function () {
                         modelo: novoModelo,
                         placa: novaPlaca,
                         diaria: novaDiaria,
-                        descricao: novaDescricao,
-                        imagem: novaImagem
+                        imagem: novaImagem,
+                        descricao: novaDescricao
                     },
                     success: function () {
                         alert('Produto atualizado com sucesso!')
@@ -149,4 +148,25 @@ $(document).ready(function () {
         })
     })
 
+    $(document).on('click', '#btnExcluir', function () {
+        var line = $(this).closest('tr')
+        var id = line.find('#code').text()
+        $('#deleteModal').modal('show')
+
+        $(document).on('click', '#btnSim', function () {
+            $.ajax({
+                url: 'http://localhost:3333/veiculo/' + id,
+                method: "DELETE", //requisição
+                success: function () {
+                    line.remove()
+                    alert('Veiculo Excluido com Sucesso!')
+                    location.reload()
+                },
+                error: function (error) {
+                    alert('Erro ao Excluir Veiculo')
+                    console.log(error);
+                }
+            })
+        })
+    })
 })

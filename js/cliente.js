@@ -8,9 +8,9 @@ $(document).ready(function () {
             var table = $('#cadastro tbody')
             $.each(data, function (index, item) {
                 table.append('<tr id=line>' +
-                    '<td id=code>' + item.id_cliente + '</td>' +
+                    '<td>' + item.id_cliente + '</td>' +
                     '<td>' + item.nome + '</td>' +
-                    '<td>' + item.cpf + '</td>' +
+                    '<td  id=code>' + item.cpf + '</td>' +
                     '<td>' + item.cnh + '</td>' +
                     '<td>' + item.endereco + '</td>' +
                     '<td>' + item.email + '</td>' +
@@ -19,5 +19,133 @@ $(document).ready(function () {
                     '<td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delModal" data-id="' + item.num_chassi + '"id="btnExcluir">Excluir</button></td>')
             })
         }
+    })
+    // CADASTRAR
+    $('#btnSalvar').on('click', function () {
+
+        $('#m-form').on('click', function (event) {
+            event.preventDefault()
+        })
+
+        var nome = $('#m-nome').val()
+        var cpf = $('#m-cpf').val()
+        var cnh = $('#m-cnh').val()
+        var endereco = $('#m-endereco').val()
+        var email = $('#m-email').val()
+        var senha = $('#m-senha').val()
+
+        if (nome != '' && cpf != '' && cnh != '' && endereco != '' && email != '' && senha != '') {
+
+            $.ajax({
+                url: 'http://localhost:3333/cliente',
+                method: 'POST',
+                caches: false,
+                dataType: 'json',
+                data: {
+                    nome: nome,
+                    cpf: cpf,
+                    cnh: cnh,
+                    endereco: endereco,
+                    email: email,
+                    senha: senha,
+                },
+                success: function () {
+                    alert('Cliente Cadastrado com Sucesso!!!')
+                    $('#-form').each(function () {
+                        this.reset()
+                        $('#addModal').modal('hide')
+                    })
+                    location.reload()
+                }
+            })
+        }
+        else {
+            $('#addModal').modal('hide')
+            alert('Preencha corretamente os dados')
+        }
+    })
+    // ATUALIZAR
+    $(document).on('click', '#btnEditar', function () {
+        var line = $(this).closest('tr')
+        var id = line.find('#code').text()
+
+        $.ajax({
+            url: 'http://localhost:3333/cliente/' + id,
+            method: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                $('#u-nome').val(data.nome)
+                // $('#u-cpf').val(data.cpf)
+                $('#u-cnh').val(data.cnh)
+                $('#u-endereco').val(data.endereco)
+                $('#u-email').val(data.email)
+                $('#u-senha').val(data.senha)
+
+                $('#updateModal').modal('show')
+            },
+            error: function (error) {
+                console.log(error);
+                alert('Não foi possivel recuperar os dados')
+            }
+        })
+        $(document).on('click', '#btnAlterar', function () {
+            var novoNome = $('#u-nome').val()
+            // var novoCpf = $('u-cpf').val()
+            var novaCnh = $('#u-cnh').val()
+            var novoEndereco = $('#u-endereco').val()
+            var novoEmail = $('#u-email').val()
+            var novaSenha = $('#u-senha').val()
+
+            if (novoNome != '' /*&& novoCpf != ''*/ && novaCnh != '' && novoEndereco != '' && novoEmail != '' && novaSenha != '') {
+                $.ajax({
+                    url: 'http://localhost:3333/cliente/' + id,
+                    method: 'PATCH',
+                    dataType: 'json',
+                    data: {
+                        nome: novoNome,
+                        // cpf: novoCpf,
+                        cnh: novaCnh,
+                        endereco: novoEndereco,
+                        email: novoEmail,
+                        senha: novaSenha
+                    },
+                    success: function () {
+                        alert('Cliente atualizado com sucesso!')
+                        $('#updateModal').modal('hide')
+                        location.reload()
+                    },
+                    error: function (error) {
+                        alert('Não foi possivel atualizar cliente')
+                        $('#updateModal').modal('hide')
+                        console.log(error);
+                        location.reload()
+                    }
+                })
+            } else {
+                alert('Falha ao atualizar o cliente')
+            }
+        })
+    })
+    // DELETE
+    $(document).on('click', '#btnExcluir', function () {
+        var line = $(this).closest('tr')
+        var id = line.find('#code').text()
+        $('#deleteModal').modal('show')
+
+        $(document).on('click', '#btnSim', function () {
+            $.ajax({
+                url: 'http://localhost:3333/cliente/' + id,
+                method: "DELETE", //requisição
+                success: function () {
+                    line.remove()
+                    alert('Cliente Excluido com Sucesso!')
+                    location.reload()
+                },
+                error: function (error) {
+                    alert('Erro ao Excluir cliente')
+                    console.log(error);
+                }
+            })
+        })
     })
 })
