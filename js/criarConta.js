@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('#btnSalvar').on('click', function () {
+  $('#btnEnviar').on('click', function () {
 
     $('#m-form').on('click', function (event) {
       event.preventDefault()
@@ -12,12 +12,6 @@ $(document).ready(function () {
     var telefone = $('#telefone').val()
     var email = $('#email').val()
     var senha = $('#senha').val()
-    console.log(nome);
-    console.log(cpf);
-    console.log(cnh);
-    console.log(endereco);
-    console.log(telefone);
-    
 
     if (nome != '' && cpf != '' && cnh != '' && endereco != '' && email != '' && senha != '' && telefone != '') {
       $.ajax({
@@ -34,9 +28,9 @@ $(document).ready(function () {
           email: email,
           senha: senha
         },
-        succeses: function () {
+        success: function () {
           alert('Cadastro Feito com Sucesso')
-          $('#form').each(function () {
+          $('#m-form').each(function () {
             this.reset()
           })
           location.reload()

@@ -54,7 +54,7 @@ $(document).ready(function () {
                 },
                 success: function () {
                     alert('Cliente Cadastrado com Sucesso!!!')
-                    $('#-form').each(function () {
+                    $('#m-form').each(function () {
                         this.reset()
                         $('#addModal').modal('hide')
                     })
