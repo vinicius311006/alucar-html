@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('#btnSalvar').on('click', function () {
 
-    $('#form').on('click', function (event) {
+    $('#m-form').on('click', function (event) {
       event.preventDefault()
     })
 
@@ -9,12 +9,17 @@ $(document).ready(function () {
     var cpf = $('#cpf').val()
     var cnh = $('#cnh').val()
     var endereco = $('#endereco').val()
-    var cliente_data = $('#data').val()
     var telefone = $('#telefone').val()
     var email = $('#email').val()
     var senha = $('#senha').val()
+    console.log(nome);
+    console.log(cpf);
+    console.log(cnh);
+    console.log(endereco);
+    console.log(telefone);
+    
 
-    if (nome != '' && cpf != '' && cnh != '' && cliente_data != '' && endereco != '' && email != '' && senha != '' && telefone != '') {
+    if (nome != '' && cpf != '' && cnh != '' && endereco != '' && email != '' && senha != '' && telefone != '') {
       $.ajax({
         url: 'http://localhost:3333/cliente',
         method: 'POST',
@@ -25,7 +30,6 @@ $(document).ready(function () {
           cpf: cpf,
           cnh: cnh,
           endereco: endereco,
-          cliente_data: cliente_data,
           telefone: telefone,
           email: email,
           senha: senha

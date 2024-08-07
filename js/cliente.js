@@ -13,7 +13,6 @@ $(document).ready(function () {
                     '<td  id=code>' + item.cpf + '</td>' +
                     '<td>' + item.cnh + '</td>' +
                     '<td>' + item.endereco + '</td>' +
-                    '<td>' + item.cliente_data + '</td>' +
                     '<td>' + item.telefone + '</td>' +
                     '<td>' + item.email + '</td>' +
                     '<td>' + item.senha + '</td>' +
@@ -33,12 +32,11 @@ $(document).ready(function () {
         var cpf = $('#m-cpf').val()
         var cnh = $('#m-cnh').val()
         var endereco = $('#m-endereco').val()
-        var cliente_data = $('#m-data').val()
         var telefone = $('#m-telefone').val()
         var email = $('#m-email').val()
         var senha = $('#m-senha').val()
 
-        if (nome != '' && cpf != '' && cnh != '' && endereco != '' && cliente_data != '' && telefone != '' && email != '' && senha != '') {
+        if (nome != '' && cpf != '' && cnh != '' && endereco != '' && telefone != '' && email != '' && senha != '') {
 
             $.ajax({
                 url: 'http://localhost:3333/cliente',
@@ -50,7 +48,6 @@ $(document).ready(function () {
                     cpf: cpf,
                     cnh: cnh,
                     endereco: endereco,
-                    cliente_data: cliente_data,
                     telefone: telefone,
                     email: email,
                     senha: senha,
@@ -81,10 +78,8 @@ $(document).ready(function () {
             dataType: 'json',
             success: function (data) {
                 $('#u-nome').val(data.nome)
-                // $('#u-cpf').val(data.cpf)
                 $('#u-cnh').val(data.cnh)
                 $('#u-endereco').val(data.endereco)
-                $('#u-data').val(data.cliente_data)
                 $('#u-telefone').val(data.telefone)
                 $('#u-email').val(data.email)
                 $('#u-senha').val(data.senha)
@@ -98,25 +93,21 @@ $(document).ready(function () {
         })
         $(document).on('click', '#btnAlterar', function () {
             var novoNome = $('#u-nome').val()
-            // var novoCpf = $('u-cpf').val()
             var novaCnh = $('#u-cnh').val()
             var novoEndereco = $('#u-endereco').val()
-            var novaData = $('#u-data').val()
             var novoTelefone = $('#u-telefone').val()
             var novoEmail = $('#u-email').val()
             var novaSenha = $('#u-senha').val()
 
-            if (novoNome != '' /*&& novoCpf != ''*/ && novaCnh != '' && novoEndereco != '' && novoEmail != '' && novaSenha != '' && novaData != '' && novoTelefone != '') {
+            if (novoNome != '' && novaCnh != '' && novoEndereco != '' && novoEmail != '' && novaSenha != '' && novoTelefone != '') {
                 $.ajax({
                     url: 'http://localhost:3333/cliente/' + id,
                     method: 'PATCH',
                     dataType: 'json',
                     data: {
                         nome: novoNome,
-                        // cpf: novoCpf,
                         cnh: novaCnh,
                         endereco: novoEndereco,
-                        cliente_data: novaData,
                         telefone: novoTelefone,
                         email: novoEmail,
                         senha: novaSenha
