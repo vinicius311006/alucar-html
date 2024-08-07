@@ -1,4 +1,16 @@
 $(document).ready(function () {
+  function formatDateToYYYYMMDD(dateString) {
+    // Cria um objeto Date a partir da string
+    const date = new Date(dateString);
+
+    // Obtém os componentes da data
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+
+    // Retorna a data no formato YYYY-MM-DD
+    return `${year}-${month}-${day}`;
+  }
 
   $.ajax({
     url: 'http://localhost:3333/reserva',
@@ -12,9 +24,9 @@ $(document).ready(function () {
           '<td id=code>' + item.id_reserva + '</td>' +
           '<td>' + item.status_reserva + '</td>' +
           '<td>' + item.valor_reserva + '</td>' +
-          '<td>' + item.data_reserva + '</td>' +
-          '<td> <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal" data-id="' + item.num_chassi + '"id="btnEditar">Editar</button></td>' +
-          '<td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delModal" data-id="' + item.num_chassi + '"id="btnExcluir">Excluir</button></td>')
+          '<td>' + formatDateToYYYYMMDD(item.data_reserva) + '</td>' +
+          '<td> <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal" data-id="' + item.id_reserva + '"id="btnEditar">Editar</button></td>' +
+          '<td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delModal" data-id="' + item.id_reserva + '"id="btnExcluir">Excluir</button></td>')
       })
     }
   })
@@ -71,7 +83,8 @@ $(document).ready(function () {
         // $('#u-idc').val(data.id_cliente)
         $('#u-status').val(data.status_reserva)
         $('#u-valor').val(data.valor_reserva)
-        $('#u-data').val(data.data_reserva)
+        $('#u-data').val(formatDateToYYYYMMDD(data.data_reserva))
+
         $('#updateModal').modal('show')
       },
       error: function (error) {
@@ -111,6 +124,28 @@ $(document).ready(function () {
       } else {
         alert('Falha ao atualizar o cliente')
       }
+    })
+  })
+  // DELETE
+  $(document).on('click', '#btnExcluir', function () {
+    var line = $(this).closest('tr')
+    var id = line.find('#code').text()
+    $('#deleteModal').modal('show')
+
+    $(document).on('click', '#btnSim', function () {
+      $.ajax({
+        url: 'http://localhost:3333/reserva/' + id,
+        method: "DELETE", //requisição
+        success: function () {
+          line.remove()
+          alert('Cliente Excluido com Sucesso!')
+          location.reload()
+        },
+        error: function (error) {
+          alert('Erro ao Excluir cliente')
+          console.log(error);
+        }
+      })
     })
   })
 })
