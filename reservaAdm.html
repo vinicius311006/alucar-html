@@ -26,32 +26,29 @@
                                 <a class="nav-link" href="./veiculos.html">veiculos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="./clientes.html">clientes</a>
+                                <a class="nav-link " href="./clientes.html">clientes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./reservaAdm.html">reserva</a>
+                                <a class="nav-link active" href="./reservaAdm.html">reserva</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <div class="d-flex justify-content-end mb-3 mt-3">
-                <button type="button" class="btn btn-secondary" data-bs-target="#addModal" data-bs-toggle="modal">Novo
-                    cliente </button>
+                <button type="button" class="btn btn-secondary" data-bs-target="#addModal" data-bs-toggle="modal">Nova
+                    Reserva </button>
             </div>
             <table id="cadastro" class="table table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">ID_Cliente</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">CPF</th>
-                        <th scope="col">CNH</th>
-                        <th scope="col">Endereço</th>
-                        <th scope="col">Telefone</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Senha</th>
-                        <th scope="col">editar</th>
-                        <th scope="col">excluir</th>
+                        <th scope="col">Id_Cliente</th>
+                        <th scope="col">Id_Reserva</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Editar</th>
+                        <th scope="col">Excluir</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -65,32 +62,27 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionar Cliente</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Fazer Reserva</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form id="m-form" class="row g-1">
-                                        <label for="m-nome">nome</label>
-                                        <input id="m-nome" type="text">
+                                        <label for="m-idc">Id_Cliente</label>
+                                        <input id="m-idc" type="number">
 
-                                        <label for="m-cpf">CPF</label>
-                                        <input id="m-cpf" type="number">
+                                        <!-- <label for="m-idr">Id_Reserva</label>
+                                        <input id="m-idr" type="number"> -->
 
-                                        <label for="m-cnh">CNH</label>
-                                        <input id="m-cnh" type="number">
+                                        <label for="m-status">Status</label>
+                                        <input id="m-status" type="text">
 
-                                        <label for="m-endereco">Endereço</label>
-                                        <input id="m-endereco" type="text">
+                                        <label for="m-valor">Valor</label>
+                                        <input id="m-valor" type="number">
 
-                                        <label for="m-telefone">Telefone</label>
-                                        <input id="m-telefone" type="number">
+                                        <label for="m-data">Data</label>
+                                        <input id="m-data" type="date">
 
-                                        <label for="m-email">Email</label>
-                                        <input id="m-email" type="email">
-
-                                        <label for="m-senha">Senha</label>
-                                        <input id="m-senha" type="password">
                                     </form>
                                 </div>
                                 <div class="modal-footer">
@@ -114,23 +106,17 @@
                                 </div>
                                 <div class="modal-body">
                                     <form id="form" class="row g-1">
-                                        <label for="u-nome">nome</label>
-                                        <input id="u-nome" type="text">
+                                        <!-- <label for="u-idc">Id_Cliente</label>
+                                        <input id="u-idc" type="number"> -->
 
-                                        <label for="u-cnh">CNH</label>
-                                        <input id="u-cnh" type="number">
+                                        <label for="u-status">Status</label>
+                                        <input id="u-status" type="text">
 
-                                        <label for="u-endereco">Endereço</label>
-                                        <input id="u-endereco" type="text">
+                                        <label for="u-valor">Valor</label>
+                                        <input id="u-valor" type="number">
 
-                                        <label for="u-telefone">Telefone</label>
-                                        <input id="u-telefone" type="number">
-
-                                        <label for="u-email">Email</label>
-                                        <input id="u-email" type="email">
-
-                                        <label for="u-senha">Senha</label>
-                                        <input id="u-senha" type="password">
+                                        <label for="u-data">Data</label>
+                                        <input id="u-data" type="text">
                                     </form>
                                 </div>
                                 <div class="modal-footer">
@@ -153,7 +139,7 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>deseja deletar este Cliente?</p>
+                                    <p>deseja deletar esta Reserva?</p>
 
                                 </div>
                                 <div class="modal-footer">
@@ -173,7 +159,7 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./js/cliente.js"></script>
+    <script type="text/javascript" src="./js/reserva.js"></script>
 </body>
 
 </html>
