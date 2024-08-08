@@ -99,35 +99,36 @@ $(document).ready(function () {
       }
     })
     $(document).on('click', '#btnAlterar', function () {
-      var novoStatus = $('#u-status').val()
       var novoValor = $('#u-valor').val()
-      var novaData = $('#u-data').val()
+      var novoPagamento = $('#u-pagamento').val()
+      var novaDataI = $('#u-data-I').val()
+      var novaDataF = $('#u-data-F').val()
 
-      if (/*novoIdc != '' &&*/ novoValor != '' && novoStatus != '' && novaData != '') {
+      if (novoValor != '' && novoPagamento != '' && novaDataI != '' && novaDataF != '') {
         $.ajax({
-          url: 'http://localhost:3333/reserva/' + id,
+          url: 'http://localhost:3333/locacao/' + id,
           method: 'PATCH',
           dataType: 'json',
           data: {
-            // id_cliente: novoIdc,
-            status_reserva: novoStatus,
-            valor_reserva: novoValor,
-            data_reserva: novaData
+            valor_total: novoValor,
+            forma_pagamento: novoPagamento,
+            data_inicial: novaDataI,
+            data_final: novaDataF
           },
           success: function () {
-            alert('Reserva atualizado com sucesso!')
+            alert('Locação atualizado com sucesso!')
             $('#updateModal').modal('hide')
             location.reload()
           },
           error: function (error) {
-            alert('Não foi possivel atualizar Reserva')
+            alert('Não foi possivel atualizar Locação')
             $('#updateModal').modal('hide')
             console.log(error);
             location.reload()
           }
         })
       } else {
-        alert('Falha ao atualizar o cliente')
+        alert('Falha ao atualizar o Locação')
       }
     })
   })
@@ -139,15 +140,15 @@ $(document).ready(function () {
 
     $(document).on('click', '#btnSim', function () {
       $.ajax({
-        url: 'http://localhost:3333/reserva/' + id,
+        url: 'http://localhost:3333/locacao/' + id,
         method: "DELETE", //requisição
         success: function () {
           line.remove()
-          alert('Cliente Excluido com Sucesso!')
+          alert('Locação Excluido com Sucesso!')
           location.reload()
         },
         error: function (error) {
-          alert('Erro ao Excluir cliente')
+          alert('Erro ao Excluir Locação')
           console.log(error);
         }
       })
