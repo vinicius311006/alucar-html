@@ -56,11 +56,11 @@
                 <div class="conteiner">
                     <div class="bloco">
                         <div class="retirada">
-                            <input type="text" placeholder="Localização Retirada">
+                            <input id="localRetirada" type="text" placeholder="Localização Retirada">
                             <img class="icon-local" src="../src/img/lugar-colocar.png" alt="">
                         </div>
                         <div class="data">
-                            <input type="date" name="" id="">
+                            <input type="date" name="" id="data-inicial">
                             <div class="hora">
                                 <input type="time" name="" id="">
                             </div>
@@ -69,11 +69,11 @@
 
                     <div class="bloco">
                         <div class="devolucao">
-                            <input type="text" placeholder="Localização Devolução">
+                            <input id="localDevolucao" type="text" placeholder="Localização Devolução">
                             <img class="icon-local" src="../src/img/lugar-colocar.png" alt="">
                         </div>
                         <div class="data">
-                            <input type="date" name="" id="">
+                            <input type="date" name="" id="data-final">
                             <div class="hora">
                                 <input type="time" name="" id="">
                             </div>
@@ -81,7 +81,7 @@
 
                     </div>
                 </div>
-                <div class="btn">
+                <div class="btn" id="btnContinuar">
                     <a href="./reserva.html">Continuar</a>
                 </div>
 
@@ -169,6 +169,7 @@
     <script type="text/javascript" src="../src/slick-1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="../js/carrossel.js"></script>
     <script type="text/javascript" src="../js/menu.js"></script>
+    <script type="text/javascript" src="../js/localizacao.js"></script>
 </body>
 
 </html>
