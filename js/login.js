@@ -20,17 +20,27 @@ $(document).ready(function () {
           senha: senha
         },
         success: function () {
-          alert('logado com Sucesso!!!')
           $('#m-form').each(function () {
             this.reset()
+            alert('Logado com sucesso')
+            
           })
-          location.reload()
+          
         },
+        error: function () {
+          $('#email, #senha').css({
+            "border-bottom": "2px solid red",
+          })
+          $('#erro').css({
+            "margin-bottom": "15px",
+            "display": "block",
+            "color": "red",
+            "background-color": "#DA9494",
+            "padding": "10px",
+            "border-radius": "5px"
+          })
+        }
       })
     }
-    else {
-      alert('Login Não Autorizado')
-    }
   })
-
 })

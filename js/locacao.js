@@ -41,7 +41,7 @@ $(document).ready(function () {
 
     var id_reserva = $('#m-idr').val()
     var valor_total = $('#m-valor').val()
-    var forma_pagamento = $('#m-pagamentp').val()
+    var forma_pagamento = $('#m-pagamento').val()
     var placa = $('#m-placa').val()
     var data_inicial = $('#m-data-I').val()
     var data_final = $('#m-data-F').val()

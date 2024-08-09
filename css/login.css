@@ -103,6 +103,18 @@
     margin-left: 10px;
 }
 
+#erro {
+    display: none;
+    justify-items: center;
+    justify-content: center;
+}
+
+#sucesso {
+    display: none;
+    justify-items: center;
+    justify-content: center;
+}
+
 @media screen and (max-width: 810px) {
 
     .caixa-texto {
