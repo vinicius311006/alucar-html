@@ -23,9 +23,8 @@ $(document).ready(function () {
           $('#m-form').each(function () {
             this.reset()
             alert('Logado com sucesso')
-            
+            location.reload()
           })
-          
         },
         error: function () {
           $('#email, #senha').css({
@@ -42,5 +41,6 @@ $(document).ready(function () {
         }
       })
     }
+    
   })
 })

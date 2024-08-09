@@ -122,7 +122,7 @@ $(document).ready(function () {
           }
         })
       } else {
-        alert('Falha ao atualizar o cliente')
+        alert('Falha ao atualizar o Reserva')
       }
     })
   })
@@ -138,11 +138,11 @@ $(document).ready(function () {
         method: "DELETE", //requisição
         success: function () {
           line.remove()
-          alert('Cliente Excluido com Sucesso!')
+          alert('Reserva Excluido com Sucesso!')
           location.reload()
         },
         error: function (error) {
-          alert('Erro ao Excluir cliente')
+          alert('Erro ao Excluir Reserva')
           console.log(error);
         }
       })

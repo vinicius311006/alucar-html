@@ -16,8 +16,8 @@ $(document).ready(function () {
                     '<td>' + item.telefone + '</td>' +
                     '<td>' + item.email + '</td>' +
                     '<td>' + item.senha + '</td>' +
-                    '<td> <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal" data-id="' + item.num_chassi + '"id="btnEditar">Editar</button></td>' +
-                    '<td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delModal" data-id="' + item.num_chassi + '"id="btnExcluir">Excluir</button></td>')
+                    '<td> <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#updateModal" data-id="' + item.id_cliente + '"id="btnEditar">Editar</button></td>' +
+                    '<td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delModal" data-id="' + item.id_cliente + '"id="btnExcluir">Excluir</button></td>')
             })
         }
     })
