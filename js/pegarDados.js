@@ -21,7 +21,7 @@ $(document).ready(function () {
     var date = new Date()
 
     $.ajax({
-      url: 'http://localhost:3333/' + id,
+      url: 'http://localhost:3333/clientel/' + id,
       method: 'GET',
       caches: false,
       dataType: 'json',
@@ -36,6 +36,7 @@ $(document).ready(function () {
       }
     })
   })
+
 
   
 })
