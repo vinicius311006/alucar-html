@@ -1,0 +1,336 @@
+.conteudo {
+    padding: 20px;
+    background-color:#B6B6B6;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 30%;
+    width: 30%;
+    margin-top: 2%;
+    border:  1px solid black;
+}
+.conteudo2 {
+    padding: 20px;
+    background-color:#B6B6B6;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 30%;
+    width: 30%;
+    margin-top: 3%;
+    border:  1px solid black;
+}
+.conteudo3 {
+    padding: 20px;
+    background-color:#B6B6B6;
+    margin-left: auto;
+    margin-right: auto;
+    border:  1px solid black;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 30%;
+    width: 30%; 
+}
+.conteudo4 {
+    padding: 20px;
+    background-color:#B6B6B6;
+    margin-left: auto;
+    margin-right: auto;
+    border:  1px solid black;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 30%;
+    width: 30%;    
+}
+
+
+.titulo {
+    text-decoration:dashed;
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 2vw;
+    
+}
+.pix{
+    display: flex;
+
+}
+.tex{
+    display: flex;
+    padding: 2vw;
+    font-size: 1vw;
+    margin-left: 10%;
+    margin-right: 15%;
+    text-align: center;
+
+}
+.pix img{
+    width: 4vw;
+    height: 8vh;
+    justify-items: center;
+    margin-top: 0.5vw;
+}
+.dadosPix p{
+    font-size: 1vw;
+}
+.dadosPix input{
+    width: 40%;
+    height: 7vh;
+    font-size: 1vw;
+    margin-top: 5px;
+    background-color:#A3A1A1;
+    border: 1px solid black;
+}
+.cartao img{
+    width: 12vw;
+    height: auto;
+}
+.cartao{
+    display: flex;
+}
+.tex2{
+    display: flex;
+    padding: 2vw;
+    font-size: 1vw;
+
+}
+.dadosCartao{
+    font-size: 1vw;
+}
+
+.dadosCartao input{
+    width: 45%;
+    height: 5vh;
+    font-size: 1.1vw;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    border: solid 1px black;
+    background-color: #A3A1A1;
+}
+.validade{
+    width: 25%;
+}
+.validade input{
+    text-align: center;
+    background-color: #A3A1A1;
+    border: solid 1px black;
+}
+.cvv input{
+    width: 10%;
+    text-align: center;
+}
+.total{
+    text-align: center;
+    margin-top: 15px;
+    
+}
+.total input{
+    width: 15vw;
+    height: 7vh;
+    background-color:#A3A1A1;
+    border: 1px solid black;
+    font-size: 1.3vw;
+}
+.finalizar{
+    text-align: center;
+    
+}
+.finalizar button{
+    width: 10vw;
+    height: 5vh;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.botao1{
+    width: 1vw;
+    height: 2vh;
+    border-radius: 100%;
+    border: none;
+    justify-content: end;
+    cursor: pointer;
+    margin-top: 2.2vw;
+   
+    margin-right: 2vw;
+    
+} 
+@media (max-width: 1500px) {
+    .conteudo{
+        width: 40%;
+        height: 40%;
+    }
+    .conteudo2{
+        width: 40%;
+        height: 40%;
+    }
+    .conteudo3{
+        width: 40%;
+        height: 40%;
+    }
+    .conteudo4{
+        width: 40%;
+        height: 40%;
+    }
+    .tex{
+        font-size: 1vw;
+    }
+    .pix img{
+        width: 8vw;
+        height: 8vh;
+        justify-items: center;
+    }
+
+
+}
+@media (max-width: 1013px) {
+    .pix img{
+        width: 4vw;
+        height: auto;
+    }
+    
+    .pix p{
+        font-size: 1.5vw;
+    }
+
+
+}
+@media (max-width: 1090px) {
+    .titulo{
+        font-size: 3vw;
+    }
+    .conteudo{
+        width: 60%;
+        height: auto;
+    }
+    .conteudo1{
+        width: 60%;
+        height: auto;
+    }
+    .conteudo2{
+        width: 60%;
+        height: auto;
+    }
+    .conteudo3{
+        width: 60%;
+        height: auto;
+    }
+    .conteudo4{
+        width: 60%;
+        height: auto;
+    }
+    .pix img{
+        width: auto;
+        height: 10vw;
+    }
+    .pix p{
+        font-size: 3vw;
+        padding: 2vw;
+    }
+    .botao1{
+        margin-top: 5vw;
+    }
+    .botao{
+        margin-top: 5vw;
+    }
+    .dadosPix p{
+        font-size: 2.5vw;
+    }
+    .dadosPix input{
+        font-size: 3vw;
+    }
+    .cartao img{
+        width: 25vw;
+    }
+    .cartao p{
+        font-size: 3vw;
+        padding: 2vw;
+    }
+
+    .dadosCartao p{
+        font-size: 2.5vw;
+    }
+    .dadosCartao input{
+        font-size: 3vw;
+    }
+    .total input{
+        width: 40vw;
+        font-size: 3.5vw;
+        
+    }
+    .finalizar button{
+        width: 30vw;
+        font-size: 3vw;
+    }
+}
+@media (max-width: 900px) {
+    .titulo{
+        font-size: 3vw;
+    }
+    .conteudo{
+        width: 80%;
+        height: auto;
+    }
+    .conteudo1{
+        width: 80%;
+        height: auto;
+    }
+    .conteudo2{
+        width: 80%;
+        height: auto;
+    }
+    .conteudo3{
+        width: 80%;
+        height: auto;
+    }
+    .conteudo4{
+        width: 80%;
+        height: auto;
+    }
+    .pix img{
+        width: auto;
+        height: 10vw;
+    }
+    .pix p{
+        font-size: 3vw;
+        padding: 2vw;
+    }
+    .botao1{
+        margin-top: 5vw;
+        margin-right: 5vw;
+    }
+   
+    .dadosPix p{
+        font-size: 2.5vw;
+    }
+    .dadosPix input{
+        font-size: 3vw;
+    }
+    .cartao img{
+        width: 35vw;
+    }
+    .cartao p{
+        font-size: 3vw;
+        padding: 2vw;
+    }
+
+    .dadosCartao p{
+        font-size: 2.5vw;
+    }
+    .dadosCartao input{
+        font-size: 3vw;
+    }
+    .total input{
+        width: 40vw;
+        font-size: 3.5vw;
+        
+    }
+    .finalizar button{
+        width: 30vw;
+        font-size: 3vw;
+    }
+}
+
+
