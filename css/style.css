@@ -98,12 +98,13 @@ header {
     font-size: 20px;
 }
 
-.menu ul a li:hover{
+.menu ul a li:hover {
     border-bottom: rgb(182, 0, 0) 1px solid;
     color: rgb(182, 0, 0);
 }
 
-.menu-direita ul a li:hover{
+
+.menu-direita ul a li:hover {
     border-bottom: rgb(182, 0, 0) 1px solid;
     color: rgb(182, 0, 0);
 }
@@ -148,16 +149,24 @@ footer p {
     display: flex;
 }
 
-.retirada {
-    background-color: #d9d9d9;
-    display: flex;
-    align-items: center;
+select {
+    margin-top: 35px;
     border-radius: 15px;
-    margin-top: 30px;
-    margin-left: 5%;
+    width: 30%;
+    height: 55px;
+    background: #d9d9d9;
+    text-align: left;
+    outline: none;
 }
 
-.retirada input {
+option {
+    background-color: #d9d9d9;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 15px;
+}
+
+.retirada select {
     background-color: #d9d9d9;
     width: 100%;
     height: 55px;
@@ -166,16 +175,7 @@ footer p {
     border-radius: 15px;
 }
 
-.devolucao {
-    background-color: #d9d9d9;
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    margin-top: 30px;
-    margin-left: 5%;
-}
-
-.devolucao input {
+.devolucao select {
     background-color: #d9d9d9;
     width: 100%;
     height: 55px;
@@ -437,6 +437,22 @@ input {
     .rede img {
         width: 30px;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 535px) {
+
+    .carro1 {
+        display: none;
+    }
+    .carro2 {
+        display: none;
+    }
+    .caixa {
+        height: 45vh;
+    }
+    .btn {
+        margin-top: 5vw;
     }
 }
 
