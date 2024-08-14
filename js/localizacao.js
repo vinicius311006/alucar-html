@@ -26,6 +26,8 @@ $(document).ready(function () {
 
       // Converte a diferença para dias
       var contadorDias = Math.floor(ContadorHoras / (1000 * 60 * 60 * 24));
+      console.log(contadorDias);
+      
       
     }
     else {
