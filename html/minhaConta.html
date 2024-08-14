@@ -43,7 +43,7 @@
                         </a>
                     </ul>
                     <div class="logo-conta">
-                        <img src="../src/img/logo-perfil.png" alt="foto-perfil">
+                        <a href="./minhaConta.html"><img src="../src/img/logo-perfil.png" alt="foto-perfil"></a>
                     </div>
                     <div id="grupo-menu" class="grupo">
                         <img src="../src/img/menu-aberto-branco.png" alt="">
@@ -63,11 +63,11 @@
                         <h3>Informação de Email</h3>
                         <form action="">
                             <label for="">Email</label>
-                            <input type="email" placeholder="Informe seu email">
+                            <input type="email" placeholder="Informe seu email" id="email">
                             <button>Salvar</button>
 
                             <label for="">Senha</label>
-                            <input type="password" placeholder="Senha">
+                            <input type="password" placeholder="Senha" id="senha">
                             <button>Salvar</button>
 
                             <h3>Detalhes Pessoais</h3>
@@ -76,12 +76,12 @@
                                 não serão exibidas para outros usuários. </h3>
 
                             <label for="">Nome</label>
-                            <input type="text" placeholder="Nome">
+                            <input type="text" placeholder="Nome" id="nome">
                             <button>Salvar</button>
 
                             <label for="">Endereço</label>
-                            <input type="text" placeholder="Endereço">
-                            <button>Salvar</button>
+                            <input type="text" placeholder="Endereço" id="endereco">
+                            <button type="button" id="btnEnviar">Salvar</button>
 
                         </form>
                     </div>
@@ -100,6 +100,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="../js/menu.js"></script>
+    <script type="text/javascript" src="../js/minhaConta.js"></script>
 </body>
 
 </html>

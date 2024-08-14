@@ -38,7 +38,6 @@ $(document).ready(function () {
 
 
   $('#porsche-valor').on('click', function () {
-    var placa = 'HFS5FJ5'
 
     $.ajax({
       url: 'http://localhost:3333/reserva',
@@ -50,7 +49,7 @@ $(document).ready(function () {
         status: 'Ativado',
         valor_reserva: '300',
         data_reserva: formatDateToYYYYMMDD(data)
-    },
+      },
     })
   })
 
