@@ -21,14 +21,13 @@ $(document).ready(function () {
     var date = new Date()
 
     $.ajax({
-      url: 'http://localhost:3333/' + id,
+      url: 'http://localhost:3333/clientel/' + id,
       method: 'GET',
       caches: false,
       dataType: 'json',
       success: function (data) {
         id = (data.id_cliente)
-        console.log(id);
-        console.log(formatDateToYYYYMMDD(date));
+        var nun_cliente = id
       },
       error: function (error) {
         alert('erro ao recuperar os dados')
@@ -37,5 +36,22 @@ $(document).ready(function () {
     })
   })
 
-  
+
+  $('#porsche-valor').on('click', function () {
+    var placa = 'HFS5FJ5'
+
+    $.ajax({
+      url: 'http://localhost:3333/reserva',
+      method: 'POST',
+      caches: false,
+      dataType: 'json',
+      data: {
+        id_cliente: id,
+        status: 'Ativado',
+        valor_reserva: '300',
+        data_reserva: formatDateToYYYYMMDD(data)
+    },
+    })
+  })
+
 })
